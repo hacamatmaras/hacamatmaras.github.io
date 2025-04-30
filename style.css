@@ -7,7 +7,7 @@
     width: auto;
     height: auto;
     z-index: -100; /* Place it behind everything */
-    object-fit: cover; /* Cover the entire area */
+    object-fit: contain; /* Changed from cover to contain */
 }
 
 body {
