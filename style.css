@@ -4,34 +4,29 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -100; /* Place it behind everything */
-    object-fit: contain; /* Keep contain */
+    z-index: -100;
+    object-fit: contain;
 }
 
 body {
-    font-family: "Winky Rough", sans-serif; /* Tüm sayfaya uygula */
-    /* background-color: #f4f4f4; Removed */
-    /* color: #333; Removed, handled by container */
+    font-family: "Winky Rough", sans-serif;
+    background-color: #fff6eb;
     margin: 0;
-    /* padding: 20px; Removed */
-    /* display: flex; Removed */
-    /* justify-content: center; Removed */
-    /* align-items: flex-start; Removed */
-    min-height: 100vh; /* Ensure it takes full viewport height */
+    min-height: 100vh;
 }
 
 .container {
-    background-color: #fff;
+    background-color: #fff6eb;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
-    max-width: 1920px; /* Increased from 600px */
-    width: 100%; /* Ensure it takes available width up to max-width */
-    position: relative; /* Added */
-    z-index: 1; /* Added */
-    margin: 50px auto; /* Added for spacing and centering */
-    color: #333; /* Added default text color here */
+    max-width: 1920px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 50px auto;
+    color: #333;
 }
 
 header {
@@ -49,9 +44,9 @@ header {
 
 h1 {
     margin: 10px 0 5px 0;
-    font-size: 2.2em; /* Biraz büyültebiliriz */
+    font-size: 2.2em;
     color: #444;
-    font-weight: normal; /* Fontun kendi ağırlığını kullan */
+    font-weight: normal;
 }
 
 p {
@@ -66,57 +61,39 @@ p {
 
 .social-links a {
     color: #333;
-    font-size: 1.8em; /* Larger icons */
+    font-size: 1.8em;
     margin: 0 12px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff;
 }
 
 .custom-links a.link-button {
-    display: flex; /* Flexbox kullan */
-    align-items: center; /* Dikeyde ortala */
-    justify-content: center; /* Yatayda ortala */
-    background-color: #f0f0f0; /* Ensure light grey background */
-    color: #333; /* Ensure dark text color */
-    padding: 15px 20px; /* Padding'i koru, soldaki padding-left'i kaldıracağız */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff6eb;
+    color: #333;
+    padding: 15px 20px;
     margin: 10px 0;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    /* position: relative; Artık gerekli değil */
-    /* text-align: left; Artık gerekli değil */
-    /* padding-left: 50px;  Kaldırıldı */
 }
 
 .custom-links a.link-button:hover {
-    background-color: #e0e0e0; /* Ensure darker grey on hover */
+    background-color: #f0eadf;
 }
 
 .custom-links .icon-left {
-    /* position: absolute; Kaldırıldı */
-    /* left: 15px; Kaldırıldı */
-    /* top: 50%; Kaldırıldı */
-    /* transform: translateY(-50%); Kaldırıldı */
-    font-size: 1.2em;
-    margin-right: 10px; /* İkon ve yazı arasına boşluk ekle */
-    flex-shrink: 0; /* İkonun küçülmesini engelle */
-}
-
-/* Style for the embedded Bluesky SVG icon */
-.bluesky-icon {
-    width: 1.2em; /* Match the size of other icons */
-    height: 1.2em; /* Match the size of other icons */
-    fill: currentColor; /* Use the link's text color by default, SVG path has its own fill */
-    vertical-align: middle; /* Flexbox bunu büyük ölçüde halleder ama kalsın */
-    /* Kaldırılan absolute pozisyonlama kuralları */
-    margin-right: 10px; /* İkon ve yazı arasına boşluk ekle */
-    flex-shrink: 0; /* İkonun küçülmesini engelle */
+    font-size: 1.5em;
+    margin-right: 12px;
+    flex-shrink: 0;
 }
 
 footer {
@@ -125,12 +102,10 @@ footer {
     color: #aaa;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
-    /* body rule removed as it was empty */
     .container {
         padding: 20px;
-        margin: 20px auto; /* Adjust margin for smaller screens */
+        margin: 20px auto;
     }
     h1 {
         font-size: 1.5em;
@@ -144,8 +119,5 @@ footer {
     }
     .custom-links a.link-button {
         padding: 12px 15px;
-        /* padding-left: 45px; Kaldırıldı */
     }
-     /* .custom-links .icon-left için özel mobil kuralına gerek kalmadı */
-     /* .bluesky-icon için özel mobil kuralına gerek kalmadı */
 } 
