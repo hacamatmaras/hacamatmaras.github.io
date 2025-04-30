@@ -1,13 +1,11 @@
 #background-video {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -100; /* Place it behind everything */
-    object-fit: contain; /* Changed from cover to contain */
+    object-fit: contain; /* Keep contain */
 }
 
 body {
@@ -129,9 +127,7 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-    body {
-        /* padding: 10px; Removed */
-    }
+    /* body rule removed as it was empty */
     .container {
         padding: 20px;
         margin: 20px auto; /* Adjust margin for smaller screens */
